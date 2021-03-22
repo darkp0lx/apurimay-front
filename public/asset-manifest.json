@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a3e2d254.chunk.css",
+    "main.js": "/static/js/main.c7337ecc.chunk.js",
+    "main.js.map": "/static/js/main.c7337ecc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.87e53057.js",
+    "runtime-main.js.map": "/static/js/runtime-main.87e53057.js.map",
+    "static/js/2.b4786cac.chunk.js": "/static/js/2.b4786cac.chunk.js",
+    "static/js/2.b4786cac.chunk.js.map": "/static/js/2.b4786cac.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a3e2d254.chunk.css.map": "/static/css/main.a3e2d254.chunk.css.map",
+    "static/js/2.b4786cac.chunk.js.LICENSE.txt": "/static/js/2.b4786cac.chunk.js.LICENSE.txt",
+    "static/media/banner.6c7e9669.jpg": "/static/media/banner.6c7e9669.jpg",
+    "static/media/hero.b52b26c8.jpg": "/static/media/hero.b52b26c8.jpg",
+    "static/media/libro1.46ec8e17.jpg": "/static/media/libro1.46ec8e17.jpg",
+    "static/media/libro2.4c0aa78e.jpg": "/static/media/libro2.4c0aa78e.jpg",
+    "static/media/libro3.cfdef935.jpg": "/static/media/libro3.cfdef935.jpg",
+    "static/media/libro4.a84eb9ea.jpg": "/static/media/libro4.a84eb9ea.jpg",
+    "static/media/libro5.5ca4247e.jpg": "/static/media/libro5.5ca4247e.jpg",
+    "static/media/libro6.e4ada3d4.jpg": "/static/media/libro6.e4ada3d4.jpg",
+    "static/media/libro7.e231b454.jpg": "/static/media/libro7.e231b454.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87e53057.js",
+    "static/js/2.b4786cac.chunk.js",
+    "static/css/main.a3e2d254.chunk.css",
+    "static/js/main.c7337ecc.chunk.js"
+  ]
+}
