@@ -22,6 +22,7 @@ const Header = () => {
       }
     })
   }
+
   return (
     <Container>
       <div className='header'>
@@ -42,19 +43,15 @@ const Header = () => {
               className='header__option__button'
               to={!state.user && '/login'}
             >
-              <p className='header__optionLineOne'>Hello {state.user?.email}</p>
+              <p className='header__optionLineOne'>Hola {state.user?.email}</p>
               <p className='header__optionLineTwo'>
                 {state.user ? 'Sign Out' : 'sign In'}
               </p>
             </Link>
           </div>
           <div className='header__option'>
-            <span className='header__optionLineOne'>Returns</span>
-            <span className='header__optionLineTwo'>&Order</span>
-          </div>
-          <div className='header__option'>
-            <span className='header__optionLineOne'>Your </span>
-            <span className='header__optionLineOne'>Prime </span>
+            <span className='header__optionLineOne'>tu </span>
+            <span className='header__optionLineOne'>Cuenta </span>
           </div>
           <Link to='/checkout'>
             <div className='header__optionBasket'>
@@ -81,7 +78,7 @@ const Container = styled.div`
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #19091d;
+    background-color: black;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -115,9 +112,10 @@ const Container = styled.div`
     font-weight: 800;
   }
   .header__searchIcon {
+    cursor: pointer;
     padding: 5px;
     height: 22px !important;
-    background-color: #cd9042;
+    background-color: #ffcc01;
   }
   .header__optionBasket {
     display: flex;

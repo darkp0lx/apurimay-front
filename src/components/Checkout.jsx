@@ -13,13 +13,7 @@ const Checkout = () => {
         <img src={banner} alt='' className='checkout__ad' />
         <div className='checkout__container'>
           <div className='checkout__left'>
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center'
-              }}
-            >
+            <div>
               <h2 className='checkout__title'>Tu carrito de compra</h2>
               {basket.map(item => (
                 <CheckoutProduct item={item} />
@@ -38,6 +32,7 @@ const Checkout = () => {
 export default Checkout
 
 const Container = styled.div`
+  padding-top: 3.5em;
   .checkout__ad {
     width: 100%;
     margin-bottom: 10px;
@@ -54,10 +49,14 @@ const Container = styled.div`
     .checkout__right {
       display: block;
     }
+    .checkout__left {
+      width: 40%;
+    }
+
     .checkout__container {
       margin: 1em;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
   }
 `

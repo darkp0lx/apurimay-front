@@ -7,6 +7,7 @@ import Login from './components/Login'
 import { useEffect } from 'react'
 import { auth } from './firebase'
 import { useStateValue } from './store/StateProvider'
+import { DetailProduct } from './components/Page/DetailProduct'
 function App () {
   const [data, dispatch] = useStateValue()
   useEffect(() => {
@@ -40,6 +41,10 @@ function App () {
           <Route exact path='/'>
             <Header />
             <Home />
+          </Route>
+          <Route path='/product/:id'>
+            <Header />
+            <DetailProduct />
           </Route>
         </Switch>
       </div>

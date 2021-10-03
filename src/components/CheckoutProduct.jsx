@@ -62,10 +62,10 @@ const Container = styled.div`
     width: 250px;
     height: 50px;
     border-radius: 0.5em;
-    background: #f0c14b;
+    background: #ffcc01;
     border: none;
     border-top: 10px;
-    color: white;
+    color: black;
     font-weight: bold;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
@@ -74,7 +74,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     svg {
-      color: #00000066;
+      color: white;
     }
   }
   .checkoutProduct__price {
@@ -83,7 +83,7 @@ const Container = styled.div`
   }
 
   @media (min-width: 768px) {
-    display: block;
+    display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
 

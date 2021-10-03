@@ -5,25 +5,25 @@ import axios from 'axios'
 
 import { useEffect, useState } from 'react'
 import { GridProduct } from './GridProduct'
-import { Carousel } from './Base/Carousel'
+import { CarouselProducts } from './Base/CarouselProducts'
 
 const Home = () => {
   const [products, setProducts] = useState()
-  useEffect(() => {
-    axios
-      .get('https://start-computer.herokuapp.com/api/products')
-      .then(res => setProducts(res.data))
-  }, [])
+  const [randomProducts, setRandomProducts] = useState()
 
-  console.log(products, 'products')
+  useEffect(() => {
+    axios.get('https://start-computer.herokuapp.com/api/products').then(res => {
+      setProducts(res.data)
+      setRandomProducts(res.data.sort(() => Math.random() - 0.5))
+    })
+  }, [])
 
   return (
     <Container>
-      <div className='home__container'>
-        <img className='home__image' src={hero} alt='' />
-        <div className='home__rowContainer'>
-          <GridProduct products={products} />
-        </div>
+      <h1>La mejor tienda de accesorios de Computo en Abancay</h1>
+      <CarouselProducts productsRandom={randomProducts?.slice(0, 5)} />
+      <div className='home__rowContainer'>
+        <GridProduct products={products} />
       </div>
     </Container>
   )
@@ -32,15 +32,15 @@ const Home = () => {
 export default Home
 
 const Container = styled.div`
-  padding-top: 3em;
-  .home {
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1500px;
+  padding-top: 4em;
+  h1 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Stick No Bills', sans-serif;
+    text-shadow: 2px 2px black;
+    color: white;
   }
-
   .home__row {
     display: flex;
     flex-wrap: wrap;
